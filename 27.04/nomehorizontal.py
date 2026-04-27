@@ -1,6 +1,2 @@
-for c in "Luan Pereira":
-    if c == " ":
-        break
-    else:
-        print(c)
-        
+for c in "luan Pereira":
+    print(c, end=" ")
