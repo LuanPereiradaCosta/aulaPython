@@ -1,2 +1,2 @@
 for c in "luan Pereira":
-    print(c, end=" ")
+    print(c, end="")
