@@ -59,7 +59,10 @@ while True:
                     subtotal += valores[i]
 
             print(f"{quantidade}x {item} -- R$ {subtotal:.2f}")
-            break
+            conf = str(input("Seu pedido está correto [S/N]: ")).lower()
+            if conf != "n" or conf != "nao":
+                print("Muito obrigado, seu pedido está sendo preparado!")
+                break
     elif selecao == 8:
         print("Seu pedido foi cancelado!")
         break
