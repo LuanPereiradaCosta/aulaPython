@@ -13,7 +13,7 @@ sexo = str(input("Digite o sexo[M/F]")).upper().strip()
 if sexo == "M":
     altM = (72.7*altura) - 58
     print(f"O peso ideal para sua altura é {altM}")
-elif sexo == "M":
+elif sexo == "F":
     altF = (62.1*altura) - 44.7
     print(f"O peso ideal para sua altura é {altF}")
 else:

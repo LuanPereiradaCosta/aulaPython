@@ -1,11 +1,14 @@
-maior = menor = 0
-for a in range(0,3):
+for a in range(0, 3):
     alt = float(input("Digite a sua altura: "))
-    if menor == 0:
-        menor = alt
-    elif maior < alt:
+
+    if a == 0:
         maior = alt
-    elif menor > alt:
         menor = alt
+    else:
+        if alt > maior:
+            maior = alt
+        if alt < menor:
+            menor = alt
+
 print(f"maior: {maior}")
 print(f"menor: {menor}")

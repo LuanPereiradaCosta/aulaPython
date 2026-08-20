@@ -1,17 +1,22 @@
-hora = int(input("Quantas horas aula o professor trabalha: "))
-print("Selecione o nivel do professor: ")
-print("[1]\n[2]\n[3]")
-nivel = input( ":")
+horas_trabalhadas = int(input("Quantas horas-aula o professor trabalha? "))
+
+print("Selecione o nível do professor:")
+print("[1] Nível 1")
+print("[2] Nível 2")
+print("[3] Nível 3")
+
+nivel = int(input("Nível: "))
 
 if nivel == 1:
-    aula = 12
+    valor_hora = 12
 elif nivel == 2:
-    aula = 17
+    valor_hora = 17
 elif nivel == 3:
-    aula = 25
+    valor_hora = 25
 else:
-    print("Esse nivel não existe")
+    valor_hora = 0
+    print("Esse nível não existe.")
 
-salario = hora*aula
-
-print(f"O salario do professor vai ser: {salario}")
+if valor_hora > 0:
+    salario = horas_trabalhadas * valor_hora
+    print(f"O salário do professor será de R$ {salario:.2f}")
